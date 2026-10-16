@@ -1,0 +1,13 @@
+{
+  "kind": "evm_contracts",
+  "contracts": [
+    {
+      "contract": "Sinopia",
+      "constructorArgs": [
+        "0xa43e6f75ee006411f79ac1c84120606c2330de82",
+        "0x5f7bb59365ce557c26dbcaa4ee9d39a4b95b7127"
+      ]
+    }
+  ],
+  "notes": "Deploy the accepted Sinopia contract on Robinhood Chain (4663). Constructor arguments are Intake v2, then the existing IMD token. Winning bids commission the IMD swarm through Intake v2 to paint the winner's brief. The sole NFT mint path is reveal(): after settlement, Intake delivery, a matching result hash and valid image result, it mints exactly one ERC-721 to that round's winning bidder with token id equal to the round id. This mint is the application product. Sinopia has no owner, admin or other mint path. Settlement pays 0.5 IMD to Intake; a successful reveal burns the remaining winning bid. No launch token, pool, reward distributor, deployment ETH or initialization calls are required."
+}
